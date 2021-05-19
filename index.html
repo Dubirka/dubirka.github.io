@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sirin's Webpage</title>
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<script src="./JS/customFunction.js"></script>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+	<!-- google font 'Roboto'medium 500' -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+	<!-- google font 'Montserrat' semi-bold' -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<!-- music player starts with low volume when page loads and is displayed hidden -->
+		<audio autoplay controls loop onloadstart="this.volume='0.01', this.style.display='none'" id="myAudio"><source src="./Music/Before_Chill.mp3" type="audio/mp3"></audio>
+		<div class="container flex" id="header">
+			<!-- logo text -->
+			<h1 class="logo"><a href="#about">MyWebsite</a></h1>
+			<!-- Nav links -->
+			<nav>
+				<ul class="nav-links">
+					<li><a href="#about" id="link1" class="active" onclick="activeLink(this)"><span>&lt;/</span> About <span>&gt;</span></a></li>
+					<li><a href="#knowledge" id="link2" class="" onclick="activeLink(this)"><span class="navLt">&lt;/</span> Knowledge <span class="navGt">&gt;</span></a></li>
+					<li><a href="#contact" id="link3" class="" onclick="activeLink(this)"><span class="navLt">&lt;/</span> Contact <span class="navGt">&gt;</span></a></li>
+				</ul>
+			</nav>
+			<!-- music icon, swithes off and turns red when clicked -->
+			<div id="music-icons">
+				<a href="#" id="off" style="display: none;" onclick="soundOnOff(0)"><img src="./Pics/Icons/sound-off.svg" alt="sound-on-icon"></a><a href="#" id="on" onclick="soundOnOff(1)"><img src="./Pics/Icons/sound-on.svg" alt="sound-off-icon"></a>
+
+			</div>
+		</div>
+	</header>
+
+	<!-- About section -->
+	<div class="container" id="about">
+		<main>
+			<div class="grid">
+				<h1 id="about-h1">
+					<span class="char">H</span><span class="char">i</span><span class="char">,</span>
+					<br>
+
+					<span class="char">I</span><span class="char">'</span><span class="char">m</span>
+					<span class="char">S</span><span class="char">i</span><span class="char">r</span><span class="char">i</span><span class="char">n</span><span class="char">,</span><br>
+
+					<span class="char">L</span><span class="char">e</span><span class="char">a</span><span class="char">r</span><span class="char">n</span><span class="char">i</span><span class="char">n</span><span class="char">g</span>
+
+					<span class="char">W</span><span class="char">e</span><span class="char">b</span><span class="char">d</span><span class="char">e</span><span class="char">s</span><span class="char">i</span><span class="char">g</span><span class="char">n</span><span class="char">!</span>
+				</h1>
+				<!--This h1 is hidden at first and shows up when screen size shrinks -->
+				<h1 id="about2-h1" class="intro">
+					Hi,<br>I'm Sirin,<br>Learning Webdesign!
+				</h1>
+				<div class="img-container">
+					<img class="main-img" src="./Pics/designer.svg" alt="picture-of-animated-designer">
+				</div>
+			</div>
+		</main>
+		<div class="main-btn">
+			<div>
+				<a id='know-btn' href="#knowledge">What I Know</a>
+				<a id='contact-btn' href="#contact">Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Knowledge section -->
+	<section id="knowledge">
+        <h2 class="sh"><span class="hu"></span>Knowledge</h2>
+        <h3>Languages and frameworks that I know</h3>
+        <div class="flex container">
+            <div class="card">
+                <h4>HTML</h4>
+                <img src="Pics/Icons/html120px.svg" alt="html-logo">
+            </div>
+            <div class="card">
+                <h4>CSS</h4>
+                <img src="Pics/Icons/css120px.svg" alt="css-logo">
+            </div>
+            <div class="card">
+                <h4>JS</h4>
+                <img src="Pics/Icons/js120px.svg" alt="js-logo">
+            </div>
+            <div class="card">
+                <h4>Python</h4>
+                <img src="Pics/Icons/python120px.svg" alt="python-logo">
+            </div>
+            <div class="card">
+                <h4>Bootstrap</h4>
+                <img src="Pics/Icons/bs120px.svg" alt="bootstrap-logo">
+            </div>
+            <div class="card">
+                <h4>WP</h4>
+                <img src="Pics/Icons/wp120px.svg" alt="wordpress-logo">
+            </div>
+
+        </div>
+	</section>
+
+	<!-- Divider section -->
+	<div class="container grid" id="divider">
+		<div id="responsive">
+			<img src="./Pics/responsive.svg" alt="laptop-mobile-pic">
+		</div>
+		<h4>Need a responsive Website?<br>Lets connect!</h4>
+	</div>
+
+	<!-- Contact Form -->
+	<section id="contact">
+		<h2 class="sh">
+			<span class="hu"></span>
+            Contact
+        </h2>
+		<div class="contact-container">
+        	
+	        <div class="contact-form">
+	    		<h3>SEND ME A MESSAGE</h3>
+		    	<form>
+		    		<div class="form-control">
+		    			<input type="text" name="name" placeholder="Name" required>
+		    		</div>
+		    		<div class="form-control">
+		    			<input type="email" name="email" placeholder="Email" required>
+		    		</div>
+		    		<div class="form-control">
+		    			<input type="text" name="subject" placeholder="Subject" required>
+		    		</div>
+		    		<textarea style="display: block;" placeholder="Message.."></textarea>
+		    		<input type="submit" value="Send" class="btn-form">
+		    	</form>
+	     	 </div>
+        	
+        </div>
+	</section>
+
+	<footer>
+		<span>&copy; Copyright 2021, Developed by Sirin</span>
+
+		<!-- uses font-awesome sovial media icons -->
+		<div id="social">
+			<a href="https://github.com/Dubirka" class="fab fa-github fa-2x" target="_blank"></a>
+			<a href="https://www.facebook.com/dubirka" class="fab fa-facebook fa-2x" target="_blank"></a>
+			<a href="https://www.linkedin.com/in/sirin-öngörur-93026a69" class="fab fa-linkedin fa-2x" target="_blank"></a>
+		</div>
+	</footer>
+</body>
+</html>
