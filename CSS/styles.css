@@ -211,7 +211,7 @@ header .flex{
 
 .img-container:hover{
 	border-radius: 0 33% 0 33%;
-	transition: all 1s;
+	transition: all 0.7s;
 }
 
 .img-container{
@@ -222,6 +222,7 @@ header .flex{
 	animation: slideFromRight 1s ease-in;
 	z-index: 99;
 	overflow: hidden;
+	transition: all 0.7s;
 }
 button{
 	padding: 15px 50px;
@@ -297,6 +298,10 @@ button:hover{
 #knowledge .card:hover{
 	transform: translateY(-15px);
 	transition: transform 0.3s ease-in;
+}
+
+#knowledge .card{
+	transition: all 0.3s ease-in;
 }
 
 .sh{
