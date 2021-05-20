@@ -436,6 +436,11 @@ textarea:focus{
 	cursor: pointer;
 }
 
+/*Hide label for better design*/
+label{
+	display:none;
+}
+
 
 
 /* ------------------------------------------------------ Footer -----------------------------------------------------------------*/
