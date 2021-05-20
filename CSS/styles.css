@@ -433,8 +433,10 @@ textarea:focus{
 }
 
 /*Hide label for better design*/
-label{
-	display: none;
+.hide-visually{
+	position: absolute;
+	top:-1000px;
+	left: -1000px;
 }
 
 
