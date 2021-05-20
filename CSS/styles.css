@@ -163,7 +163,7 @@ nav span{
 }
 
 nav a:hover>span{
-	color: #05c5ff;
+	color: var(--nav-links-color);
 	transition: ease 0.5s;
 }
 
