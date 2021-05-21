@@ -318,6 +318,7 @@ button:hover{
 	height: auto;
 	gap:5%;
 	text-align: center;
+	line-height: 1.5;
 	font-family: 'Montserrat', 'Helvetica', 'sans-serif';
 	font-weight: normal;
 	font-size: 2rem;
