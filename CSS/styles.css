@@ -13,7 +13,7 @@ html{
 	--bg-color: #000f42;
 	--header-bg-color: #1a264e;
 	--form-bg-color: #1a264e;
-	--form-text-color: #757575;
+	--form-text-color: #d6d6d6;
 	--form-border-color:#b4becb;
 	--btn-border-color: #000f42;
 	--btn-bg-color: #283e88;
@@ -410,7 +410,7 @@ textarea{
 	height: 20vh;
 	background-color: var(--form-bg-color);
 	border: solid 1px var(--form-border-color);
-	color: #fff;
+	color: var(#d6d6d6);
 	font-size: 1.2rem;
 	padding: 5px 10px;
 	margin-bottom: 30px;
@@ -418,6 +418,10 @@ textarea{
 
 textarea:focus{
 	outline: none;
+}
+
+textarea::placeholder{
+	color: var(--form-text-color);
 }
 
 .btn-form{
