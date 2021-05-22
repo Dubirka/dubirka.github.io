@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sirin's Webpage</title>
-	<link rel="stylesheet" type="text/css" href="./CSS/styles.css">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 	<script src="./JS/customFunction.js"></script>
 
 	<!-- Font Awesome -->
@@ -18,14 +18,17 @@
 	<!-- google font 'Montserrat' semi-bold' -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="shorcut icon" type="image/jpg" href="https://img.icons8.com/fluent/96/000000/origami.png">
 </head>
 <body>
 	<header>
 		<!-- music player starts with low volume when page loads and is displayed hidden -->
-		<audio autoplay controls loop onloadstart="this.volume='0.3', this.style.display='none'" id="myAudio"><source src="./Music/Before_Chill.mp3" type="audio/mp3"></audio>
+		<audio autoplay controls loop onloadstart="this.volume='0', this.style.display='none'" id="myAudio"><source src="./Music/Before_Chill.mp3" type="audio/mp3"></audio>
 		<div class="container flex" id="header">
 			<!-- logo text -->
-			<h1 class="logo"><a href="https://dubirka.github.io/">MyWebsite</a></h1>
+			<h1 id="logo"><a href="#about" onclick="activeLink(this)">MyWebsite</a></h1>
 			<!-- Nav links -->
 			<nav>
 				<ul class="nav-links">
@@ -36,43 +39,43 @@
 			</nav>
 			<!-- music icon, swithes off and turns red when clicked -->
 			<div id="music-icons">
-				<a href="#" id="off" style="display: none;" onclick="soundOnOff(0)"><img src="./Pics/Icons/sound-off.svg" alt="sound-on-icon"></a><a href="#" id="on" onclick="soundOnOff(1)"><img src="./Pics/Icons/sound-on.svg" alt="sound-off-icon"></a>
+				<a href="#" id="on" style="display: none;" onclick="soundOnOff(1)"><img src="./Pics/Icons/sound-on.svg" alt="sound-off-icon"></a><a href="#" id="off" onclick="soundOnOff(0)"><img src="./Pics/Icons/sound-off.svg" alt="sound-on-icon"></a>
 
 			</div>
 		</div>
 	</header>
 
 	<!-- About section -->
-	<div class="container" id="about">
-		<main>
-			<div class="grid">
-				<h1 id="about-h1">
-					<span class="char">H</span><span class="char">i</span><span class="char">,</span>
-					<br>
+	<main id="about">
+		<div class="grid container">
+			<h1 id="about-h1">
+				<span class="char">H</span><span class="char">i</span><span class="char">,</span>
+				<br>
 
-					<span class="char">I</span><span class="char">'</span><span class="char">m</span>
-					<span class="char">S</span><span class="char">i</span><span class="char">r</span><span class="char">i</span><span class="char">n</span><span class="char">,</span><br>
+				<span class="char">I</span><span class="char">'</span><span class="char">m</span>
+				<span class="char">S</span><span class="char">i</span><span class="char">r</span><span class="char">i</span><span class="char">n</span><span class="char">,</span><br>
 
-					<span class="char">L</span><span class="char">e</span><span class="char">a</span><span class="char">r</span><span class="char">n</span><span class="char">i</span><span class="char">n</span><span class="char">g</span>
+				<span class="char">L</span><span class="char">e</span><span class="char">a</span><span class="char">r</span><span class="char">n</span><span class="char">i</span><span class="char">n</span><span class="char">g</span>
 
-					<span class="char">W</span><span class="char">e</span><span class="char">b</span><span class="char">d</span><span class="char">e</span><span class="char">s</span><span class="char">i</span><span class="char">g</span><span class="char">n</span><span class="char">!</span>
-				</h1>
-				<!--This h1 is hidden at first and shows up when screen size shrinks -->
-				<h1 id="about2-h1" class="intro">
-					Hi,<br>I'm Sirin,<br>Learning Webdesign!
-				</h1>
-				<div class="img-container">
-					<img class="main-img" src="./Pics/designer.svg" alt="picture-of-animated-designer">
+				<span class="char">W</span><span class="char">e</span><span class="char">b</span><span class="char">d</span><span class="char">e</span><span class="char">s</span><span class="char">i</span><span class="char">g</span><span class="char">n</span><span class="char">!</span>
+			</h1>
+			<!--This h1 is hidden at first and shows up when screen size shrinks -->
+			<h1 id="about2-h1" class="intro">
+				Hi,<br>I'm Sirin,<br>Learning Webdesign!
+			</h1>
+			<div class="img-container">
+				<img class="main-img" src="./Pics/design.svg" alt="picture-of-animated-designer">
+			</div>
+
+	
+			<div class="main-btn">
+				<div>
+					<a id='know-btn' href="#knowledge">What I Know</a>
+					<a id='contact-btn' href="#contact">Contact</a>
 				</div>
 			</div>
-		</main>
-		<div class="main-btn">
-			<div>
-				<a id='know-btn' href="#knowledge">What I Know</a>
-				<a id='contact-btn' href="#contact">Contact</a>
-			</div>
 		</div>
-	</div>
+	</main>
 
 	<!-- Knowledge section -->
 	<section id="knowledge">
@@ -112,10 +115,10 @@
 		<div id="responsive">
 			<img src="./Pics/responsive.svg" alt="laptop-mobile-pic">
 		</div>
-		<h4>Need a responsive Website?<br>Let's connect!</h4>
+		<h4 id="divider-text" >Need a responsive Website?<br>Let's connect!</h4>
 	</div>
 
-	<!-- Contact Form -->
+	<!-- Contact/Form section -->
 	<section id="contact">
 		<h2 class="sh">
 			<span class="hu"></span>
@@ -139,7 +142,7 @@
 		    			<input id="subject" type="text" name="subject" placeholder="Subject" required>
 		    		</div>
 				<label class="hide-visually" for="message">submit</label>
-		    		<textarea id="message" style="display: block;" placeholder="Message.."></textarea>
+		    		<textarea id="message" style="display: block;" placeholder="Write your message.."></textarea>
 				<label class="hide-visually" for="submit">submit</label>
 		    		<input id="submit" type="submit" value="Send" class="btn-form">
 		    	</form>
@@ -153,9 +156,9 @@
 
 		<!-- uses font-awesome sovial media icons -->
 		<div id="social">
-			<a href="https://github.com/Dubirka" class="fab fa-github fa-2x" target="_blank" aria-label="link to github"></a>
-			<a href="https://www.facebook.com/dubirka" class="fab fa-facebook fa-2x" target="_blank" aria-label="link to facebook"></a>
-			<a href="https://www.linkedin.com/in/sirin-öngörur-93026a69" class="fab fa-linkedin fa-2x" target="_blank" aria-label="link to linkedin"></a>
+			<a href="https://github.com/Dubirka" class="fab fa-github fa-2x" target="_blank"></a>
+			<a href="https://www.facebook.com/dubirka" class="fab fa-facebook fa-2x" target="_blank"></a>
+			<a href="https://www.linkedin.com/in/sirin-öngörur-93026a69" class="fab fa-linkedin fa-2x" target="_blank"></a>
 		</div>
 	</footer>
 </body>
