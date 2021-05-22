@@ -4,7 +4,7 @@
 function soundOnOff(var1){
 	if (var1==0) {
 		document.getElementById('off').style.display="none";
-		document.getElementById('myAudio').volume="0.2";
+		document.getElementById('myAudio').volume="0.3";
 		document.getElementById('on').style.display='flex';
 	}if(var1==1){
 		document.getElementById('on').style.display="none";
