@@ -8,15 +8,31 @@
 
 /*Colors and other saved data for multiple use*/
 html{
-	--nav-links-color: #8f99ef;
+	--nav-links-color: #979dd6;
 	--nav-bg-color: #1a264e;
-	--bg-color: #000f42;
+	--bg-color: #150e2b;
 	--header-bg-color: #1a264e;
 	--form-bg-color: #1a264e;
-	--form-text-color: #d6d6d6;
+	--form-text-color: #9c9c9c;
 	--form-border-color:#b4becb;
 	--btn-border-color: #000f42;
 	--btn-bg-color: #283e88;
+
+	/*Alternative colors*/
+	--nav-bg-color1:#e6e6e6;
+	--nav-bg-color2:#150e2b;
+	--nav-links-color1:#fff;
+	--bg-color1: #d2d2d2;
+	--text-color:#3c3c3c;
+	--form-btn-bg: #fff;
+	--form-btn-text: #150e2b;
+	--form-bg-color1: #150e2b;
+	--form-text-color1: #fff;
+	--btn-bg-color2:#150e2b;
+	--btn-border-color2: #fff;
+	--btn-text-color1:#150e2b;
+	--btn-text-color2:#fff;
+
 
 	scroll-behavior: smooth;
 }
@@ -25,7 +41,7 @@ html{
 body{
 	background: var(--bg-color);
 	font-family: 'Roboto', 'Helvetica';
-	color: #fff;
+	color: var(--text-color);
 
 }
 
@@ -56,7 +72,7 @@ img{
 }
 
 section{
-	background-color: #f1f1f1;
+	background-color: #fff;
 	position: relative;
 	padding-bottom: 10%;
 }
@@ -127,13 +143,13 @@ header{
 	position: sticky;
 	color: #fff;
 	width: 100%;
-	background: var(--header-bg-color);
+	background: var(--nav-bg-color2);
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
 	z-index: 999;
 }
 
 /*Logo Styling*/
-h1.logo{
+h1#logo{
 	font-size: 1.5rem;
 	padding: 0;
 	margin:0;
@@ -168,7 +184,7 @@ nav a:hover>span{
 }
 
 nav a:hover{
-	color: #979dd6;
+	color: var(--nav-links-color);
 	transition: all ease 0.5s;
 }
 
@@ -189,7 +205,11 @@ header .flex{
 }
 
 
-/* -------------------------------------------------- ABOUT --------------------------------------------------------------------*/ 
+/* -------------------------------------------------- ABOUT -------------------------------------------------------------------*/ 
+
+main{
+	background-color: var(--bg-color1);
+}
 
 #about{
 	height: auto;
@@ -197,11 +217,11 @@ header .flex{
 }
 
 #about2-h1{
-	animation: slideFromLeft 1s ease-in;
+	animation: slideFromLeft 1.2s ease-in;
 }
 
 #about-h1{
-	animation: slideFromLeft 1s ease-in;
+	animation: slideFromLeft 1.2s ease-in;
 }
 
 .main-img{
@@ -216,17 +236,18 @@ header .flex{
 
 .img-container{
 	max-width: 400px;
-	background-color: #a4a0a9;
+	background-color: #fff;
 	border-radius: 33% 0 33% 0;
 	margin: 50px 0;
-	animation: slideFromRight 1s ease-in;
+	animation: slideFromRight 1.2s ease-in;
 	z-index: 99;
 	overflow: hidden;
-	transition: all 0.7s;
+	transition: all 0.7s ease-in;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 button{
 	padding: 15px 50px;
-	border: solid 1px #05c5ff;
+	border: solid 1px var(--nav-bg-color2);
 	border-radius: 4px;
 	background-color: rgba(0,0,0,0);
 	color: #05c5ff;
@@ -241,25 +262,44 @@ button:hover{
 }
 
 .main-btn{
-	animation: slideFromLeft 1s ease-in;
+	animation: slideFromLeft 1.2s ease-in;
 }
 
-.main-btn a{
+#contact-btn{
 	margin-right:30px;
 	padding: 15px 50px;
-	border: solid 1px #05c5ff;
+	border: solid 1px var(--btn-border-color);
 	border-radius: 4px;
-	background-color: rgba(0,0,0,0);
-	color: #05c5ff;
+	background-color: transparent;
+	color: var(--btn-text-color);
 }
 
-.main-btn a:hover{
-	border: solid 1px #05c5ff;
-	background-color: #05c5ff;
-	color: black;
+#know-btn{
+	margin-right:30px;
+	padding: 15px 50px;
+	border: solid 1px var(--btn-border-color2);
+	border-radius: 4px;
+	background-color: var(--btn-bg-color2);
+	color: var(--btn-text-color2);
+}
+
+#contact-btn:hover{
+	border: solid 1px var(--btn-border-color2);
+	background-color: var(--btn-bg-color2);
+	color: var(--btn-text-color2);
 	transition: ease 0.3s;
 	cursor: pointer;
 }
+
+#know-btn:hover{
+	border: solid 1px var(--btn-border-color);
+	background-color: transparent;
+	color: var(--btn-text-color);
+	transition: ease 0.3s;
+	cursor: pointer;
+}
+
+
 
 .char{
 	display: inline-block;
@@ -295,13 +335,13 @@ button:hover{
 	padding-bottom: 10px;
 }
 
+#knowledge .card{
+	transition: all 0.3s ease-in;
+}
+
 #knowledge .card:hover{
 	transform: translateY(-15px);
 	transition: transform 0.3s ease-in;
-}
-
-#knowledge .card{
-	transition: all 0.3s ease-in;
 }
 
 .sh{
@@ -314,9 +354,10 @@ button:hover{
 
 /* -------------------------------------------------- Divider -------------------------------------------------------------------*/ 
 #divider{
-	background-color: var(--bg-color);
+	background-color: var(--nav-bg-color2);
 	height: auto;
 	gap:5%;
+	color: #fff;
 	text-align: center;
 	line-height: 1.5;
 	font-family: 'Montserrat', 'Helvetica', 'sans-serif';
@@ -328,9 +369,15 @@ button:hover{
 #responsive{
 	max-width: 400px;
 	background-color: #fff;
-	border-radius: 50%;
+	border-radius: 60%;
 	margin: 50px 0;
 	overflow: hidden;
+	animation: slideFromLeft 1.2s ease-in;
+	padding: 5px;
+}
+
+#divider-text{
+	animation: slideFromRight 1.2s ease-in;
 }
 
 #divider img{
@@ -350,6 +397,7 @@ button:hover{
 }
 
 .contact-container{
+	color: var(--form-text-color1);
 	padding-bottom: 5%;
 	height: 80%;
 	display: flex;
@@ -364,9 +412,10 @@ button:hover{
 	height: 100%;
 	width: 60%;
 	padding-bottom: 30px;
-	background-color: var(--form-bg-color);
+	background-color: var(--form-bg-color1);
 	border-radius: 8px;
 	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+	animation: slideFromDown 1s ease-in-out;
 }
 
 .contact-form>h3{
@@ -389,12 +438,16 @@ form{
 /*Targets any input element except the one with type submit*/
 form input:not([type='submit']) {
 	border: 0;
-	background-color: var(--form-bg-color);
-	color: #fff;
+	background-color: var(--form-bg-color1);
+	color: var(--form-text-color1);
 	border-bottom: 1px solid var(--form-border-color);
 	width: 100%;
 	padding: 5px;
 	font-size: 1rem;
+}
+
+form input{
+	
 }
 
 form input:focus{
@@ -402,26 +455,34 @@ form input:focus{
 }
 
 input::placeholder{
+	color: var(--form-text-color1);
+}
+
+form input:not([type='submit']):focus::placeholder{
 	color: var(--form-text-color);
 }
 
 textarea{
 	width: 100%;
 	height: 20vh;
-	background-color: var(--form-bg-color);
+	background-color: var(--form-bg-color1);
 	border: solid 1px var(--form-border-color);
 	color: #fff;
 	font-size: 1.2rem;
-	padding: 5px 10px;
+	padding: 5px 5px;
 	margin-bottom: 30px;
+}
+
+textarea::placeholder{
+	color: var(--form-text-color1);
+}
+
+textarea:focus::placeholder{
+	color: var(--form-text-color);
 }
 
 textarea:focus{
 	outline: none;
-}
-
-textarea::placeholder{
-	color: var(--form-text-color);
 }
 
 .btn-form{
@@ -450,7 +511,6 @@ textarea::placeholder{
 }
 
 
-
 /* ------------------------------------------------------ Footer -----------------------------------------------------------------*/
 
 footer{
@@ -461,6 +521,7 @@ footer{
 	align-items: center;
 	margin: 0 auto;
 	padding: 0px 15px;
+	color: #fff;
 }
 
 footer a{
@@ -506,12 +567,32 @@ footer span{
 	}
 }
 
+@keyframes slideFromUp{
+	0%{
+		transform: translateY(-10%);
+	}
+
+	100%{
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideFromDown{
+	0%{
+		transform: translateY(10%);
+	}
+
+	100%{
+		transform: translateY(0);
+	}
+}
+
 /* -------------------------------------------------- Break-points ---------------------------------------------------------------*/ 
 
 
 /* DESKTOP - For screensizes higher than 1100px */
 
-@media screen and (min-width: 1101px){
+@media only screen and (min-width: 1101px){
 
 	/*Minimazing the gap between the grid elements/items*/
 	.grid {
@@ -542,7 +623,7 @@ footer span{
 
 
 /* DESKTOP/Laptops - For screensizes up to 1100px */
-@media screen and (max-width: 1100px){
+@media only screen and (max-width: 1100px){
 
 	/*ABOUT Made two version of the about heading, now switching to version 2 and hiding version 1*/
 	#about-h1{
@@ -568,7 +649,7 @@ footer span{
 
 
 /* TABLETS/Mobile - For screensizes up to 768px */
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
 
 	/*SECTION responsive*/
 	section{
@@ -616,7 +697,7 @@ footer span{
 	}
 
 
-	h1.logo{
+	h1#logo{
 		margin-bottom: 10px;
 	}
 
@@ -694,7 +775,7 @@ footer span{
 
 
 /* MOBILE - For screensizes 500px and below */
-@media (max-width: 500px){
+@media only screen and (max-width: 500px){
 
 
 	/*ABOUT responsive*/
