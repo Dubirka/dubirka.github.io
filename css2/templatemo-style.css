@@ -732,7 +732,7 @@ textarea.form-control {
 }
 
 /*==============================================
-10. SKILLS BLOCK CSS
+9. SKILLS BLOCK CSS
 ================================================*/
 .skills-row {
   margin-top: 80px;
@@ -791,4 +791,11 @@ textarea.form-control {
   height: 6px;
   background-color: #fff;
   border-radius: 3px;
+}
+
+/*==============================================
+10. Footer
+================================================*/
+footer{
+  text-align:center;
 }
