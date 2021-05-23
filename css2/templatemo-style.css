@@ -798,4 +798,5 @@ textarea.form-control {
 ================================================*/
 footer{
   text-align:center;
+  color: var(--text-color);
 }
