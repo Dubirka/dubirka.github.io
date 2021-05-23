@@ -3,10 +3,6 @@
 		display:block !important;
 		height:auto !important;
 	}
-	
-	div[data-section="slide03"]{
-		padding-bottom:50px;
-	}
 }
 @media only screen and (max-width: 1440px) {
 	.welcome-title {
