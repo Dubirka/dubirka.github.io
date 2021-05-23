@@ -322,7 +322,7 @@ a#logo {
 }
 .navbar-nav li a {
   var(--nav-text-color);
-  font-size: 17px;
+  font-size: 15px;
   text-decoration:none;
   display:block;
   font-weight: 500;
