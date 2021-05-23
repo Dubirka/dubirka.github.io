@@ -321,11 +321,11 @@ a#logo {
 }
 .navbar-nav li a {
   color:#fff;
-  font-size: 15px;
+  font-size: 17px;
   text-decoration:none;
   display:block;
   font-weight: 500;
-  opacity: 0.9;
+  opacity: 1;
 }
 .navbar-nav li a:after {
   content:'';
