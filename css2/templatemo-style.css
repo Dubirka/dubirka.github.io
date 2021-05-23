@@ -738,6 +738,11 @@ textarea.form-control {
 .contact-row i.fa-envelope {
   font-size: 25px;
 }
+.hide-visually{
+  position:absolute;
+  top:-5000px;
+  left:-5000px;
+}
 
 /*==============================================
 10. SKILLS BLOCK CSS
