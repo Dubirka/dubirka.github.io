@@ -261,7 +261,7 @@
 	.navbar-nav {
 		overflow-y: auto;
 		display:block;
-		background: var(--bg-color3);
+		background: rgb(230 230 230 / 25%);
 	}
 	.navbar-nav li a:after {
 		display:none;
