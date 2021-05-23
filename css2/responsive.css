@@ -201,7 +201,7 @@
 		position: fixed;
 		top: 0;
 		z-index: 6666;
-		background-color: transparent;
+		background-color:var(--bg-color3);
 		color:var(--text-color);
 	}
 	#navigation button i {
