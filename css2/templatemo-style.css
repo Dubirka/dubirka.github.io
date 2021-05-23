@@ -27,6 +27,9 @@ CSS SITEMAP >>>>
 :root{
   --bg-color:#4468b7;
   --bg-color2:#222;
+  --bg-color3:#ff5722;
+  
+  --text-color:#e2e2e2;
 }
 
 
@@ -44,9 +47,9 @@ body {
 }
 body {
   font: 16px/1.6 Montserrat, Arial, Helvetica, sans-serif;
-  color: #fff;
+  color: var(--text-color);
   text-align:center;
-  background: var(--bg-color);
+  background: var(--bg-color3);
   letter-spacing: 1.5px;
 }
 img {
