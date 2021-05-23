@@ -201,10 +201,10 @@
 		position: fixed;
 		top: 0;
 		z-index: 6666;
-		background-color: rgba(250,250,250,0.9);
+		background-color: transparent;
 	}
 	#navigation button i {
-		color: #1e1e1e;
+		color: var(--text-color);
 	}
 	.welcome-box {
 		padding: 150px 0px;
@@ -215,7 +215,7 @@
 	.navbar-toggle {
 		padding: 0;
 		margin: 0;
-		color: #fff;
+		color: var(--text-color);
 		font-size: 28px;
 		position: absolute;
 		right: 0;
@@ -251,14 +251,14 @@
 		text-align: center;
 	}
 	.navigation-menu > li > a {
-		color:#222;
+		color:var(--text-color);
 		padding:15px;
 		line-height:1.2;
 	}
 	.navbar-nav {
 		overflow-y: auto;
 		display:block;
-		background: rgba(230, 230, 230, 0.25);
+		background: var(--bg-color3);
 	}
 	.navbar-nav li a:after {
 		display:none;
