@@ -24,7 +24,9 @@ CSS SITEMAP >>>>
 /*==============================================
 01. GENERAL CSS
 ================================================*/
-
+:root{
+  --bg-color:#4468b7;
+  --bg-color2:#222;
 
 
 
@@ -43,7 +45,7 @@ body {
   font: 16px/1.6 Montserrat, Arial, Helvetica, sans-serif;
   color: #fff;
   text-align:center;
-  background: #222;
+  background: var(--bg-color);
   letter-spacing: 1.5px;
 }
 img {
