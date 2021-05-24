@@ -344,7 +344,7 @@ h2.section-heading{
   width: 60%; 
 }
 
-.home-content .left-text h4 {
+.home-content .left-text h2 {
   display: inline-block;
   padding-bottom: 5px;
   font-size: 22px;
@@ -357,7 +357,7 @@ h2.section-heading{
   border-bottom: 2px solid #fff;
 }
 
-.home-content .left-text h4 em {
+.home-content .left-text h2 em {
   color: #fa5252;
   font-style: normal;
 }
