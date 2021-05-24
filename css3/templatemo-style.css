@@ -66,6 +66,7 @@ h2{
   position:absolute;
   top:-10000px;
   left:-10000px;
+  z-index:-1000;
 }
 
 .nav {
