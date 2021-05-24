@@ -30,6 +30,13 @@ ul {
   margin: 0;
 }
 
+legend{
+  position:absolute;
+  z-index:-1000;
+  left:-10000px;
+  top:-10000px;
+}
+
 .primary-button a {
   display: inline-block;
   background-color: #fa5252;
