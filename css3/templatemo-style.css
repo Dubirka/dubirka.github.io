@@ -62,6 +62,12 @@ ul {
   letter-spacing: 1px;
 }
 
+h2{
+  position:absolute;
+  top:-10000px;
+  left:-10000px;
+}
+
 .nav {
   position: fixed;
   z-index: 1;
