@@ -42,9 +42,9 @@ legend{
   background-color: #fa5252;
   color: #fff;
   letter-spacing: 1px;
-  font-size: 11px;
+  font-size: 15px;
   padding: 12px 18px;
-  font-weight: 300;
+  font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
   border: 1px solid transparent;
@@ -574,9 +574,9 @@ h2.section-heading{
   background-color: #fa5252;
   color: #fff;
   letter-spacing: 1px;
-  font-size: 11px;
+  font-size: 15px;
   padding: 12px 18px;
-  font-weight: 300;
+  font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
   border: 1px solid transparent;
