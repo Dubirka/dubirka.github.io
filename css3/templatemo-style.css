@@ -58,7 +58,7 @@ legend{
   -webkit-transition: all 0.2s linear;
 }
 
-.heading h4 {
+.heading h4,.heading h3 {
   margin-bottom: 60px;
   margin-top: 0px;
   font-size: 36px;
