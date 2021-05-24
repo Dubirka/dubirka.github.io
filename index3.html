@@ -29,6 +29,13 @@ https://templatemo.com/tm-505-stacked
         <!-- Google Font 'Montserrat' -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        
+        /*Fixing errors on wave accessebility tools */
+        <script>
+          document.getElementsByClassName('lb-prev')[0].setAttribute('href','#');
+          document.getElementsByClassName('lb-next')[0].setAttribute('href','#');
+          document.getElementsByClassName('lb-image')[0].setAttribute('alt','lb-image');
+        </script>
 
         <script src="js3/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -195,7 +202,7 @@ https://templatemo.com/tm-505-stacked
                       <div class="row">
                         <div class="col-md-8">
                           <div class="contat-form">
-                            <form id="contact" action="" method="post">
+                            <form id="contact" action="https://dubirka.github.io/" method="post">
                               <fieldset>
                                 <label for="name">name</label>
                                 <input id="name" name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
