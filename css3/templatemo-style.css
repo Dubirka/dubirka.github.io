@@ -16,7 +16,7 @@ p {
 }
 
 a {
-  color: #ff6;
+  color: #fff;
 }
 
 a:hover {
@@ -419,7 +419,7 @@ h2.section-heading{
   display: inline-block;
   padding-bottom: 5px;
   font-size: 22px;
-  color: #121212;
+  color: #000;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -429,7 +429,7 @@ h2.section-heading{
 }
 
 .about-content .about-box-text p {
-  color: #343434;
+  color: #000;
   margin-bottom: 20px;
 }
 
@@ -490,7 +490,7 @@ h2.section-heading{
   display: inline-block;
   padding-bottom: 5px;
   font-size: 22px;
-  color: #121212;
+  color: #000;
   font-weight: 500;
   text-transform: uppercase;
   margin-top: 0px;
@@ -500,7 +500,7 @@ h2.section-heading{
 
 .projects-content .primary-button a:hover {
   background-color: transparent;
-  color: #fa5252;
+  color: #fff;
   border: 1px solid #fa5252;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -571,7 +571,7 @@ h2.section-heading{
 
 .contact-content button {
   display: inline-block;
-  background-color: #fa5252;
+  background-color: #fff;
   color: #fff;
   letter-spacing: 1px;
   font-size: 15px;
@@ -625,7 +625,7 @@ label{
 }
 
 .footer a {
-  color: #ff6;
+  color: #fff;
 }
 
 
