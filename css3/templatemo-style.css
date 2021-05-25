@@ -37,9 +37,13 @@ legend{
   top:-10000px;
 }
 
+.btn{
+  background-color: #B10606;
+}
+
 .primary-button a {
   display: inline-block;
-  background-color: #fa5252;
+  background-color: #B10606;
   color: #fff;
   letter-spacing: 1px;
   font-size: 15px;
