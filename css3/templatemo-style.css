@@ -135,6 +135,19 @@ h2.section-heading{
 .nav__link:hover {
   background: #fa5252;
 }
+
+@media (max-width: 500px) {
+  p{
+		font-size: 13px;
+    line-height: 15px;
+	}
+  .heading h4,.heading h3 {
+  font-size: 30px;
+}
+  
+  
+}
+
 @media (max-width: 640px) {
   .nav {
     width: 70px;
