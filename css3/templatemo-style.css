@@ -37,10 +37,6 @@ legend{
   top:-10000px;
 }
 
-button.btn{
-  background-color: #B10606;
-}
-
 .primary-button a {
   display: inline-block;
   background-color: #B10606;
@@ -575,7 +571,7 @@ h2.section-heading{
 
 .contact-content button {
   display: inline-block;
-  background-color: #fff;
+  background-color: background-color: #B10606;
   color: #fff;
   letter-spacing: 1px;
   font-size: 15px;
