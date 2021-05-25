@@ -739,6 +739,31 @@ label{
   }
 }
 
+@media (max-width: 990px){
+  .projects-content {
+    width: 100vh;
+    height: 100vh;
+    padding: 0px 30px;
+  }
+  .project-item  {
+    padding: 0px 120px;
+  }
+  .project-item img {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  .projects-content .heading {
+    padding-top: 25%;
+  }
+  .projects-content .owl-carousel {
+    margin: 0;
+    width: 100%;
+  }
+  .projects-content .text-content {
+    display: none;
+  }
+}
+
 
 
 
