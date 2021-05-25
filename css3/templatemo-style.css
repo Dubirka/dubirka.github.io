@@ -56,7 +56,10 @@ legend{
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
-  color:#B10606;
+}
+
+button#form-submit:hover{
+  color: #B10606;
 }
 
 .heading h4,.heading h3 {
