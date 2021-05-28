@@ -67,11 +67,12 @@ h2{
 	margin-bottom: 20px;
 }
 
-h1 *, h1, h2{
+h1, h2{
 	font-family: 'Montserrat', 'sans-serif';
 }
 
-h1{
+h1#logo{
+	font-family: 'Playgames', 'Montserrat', 'sans-serif';
 	font-size: 3rem;
 }
 
