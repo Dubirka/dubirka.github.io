@@ -1,15 +1,17 @@
 /*Fonts*/
 @font-face {
-{
-font-family: 'Playgames';
-src: url('../fonts/PlayMeGames-Demo.otf');
+	
+	font-family: 'Playgames';
+	src: url('../fonts/PlayMeGames-Demo.otf');
 }
 
-{
-font-family: 'Beef';
-src: url("../fonts/Beef'd.ttf");
+@font-face {
+	
+	font-family: 'Beef';
+	src: url("../fonts/Beef'd.ttf");
 }
-}
+
+
 
 /* --------------------------------------------- GENERAL STYLING/Resets------------------------------------------------------------*/
 
