@@ -5,6 +5,13 @@
 	src: url('../fonts/PlayMeGames-Demo.otf');
 }
 
+@font-face {
+	
+	font-family: 'Beefd';
+	src: url('../fonts/Beefd.ttf');
+}
+
+
 
 
 /* --------------------------------------------- GENERAL STYLING/Resets------------------------------------------------------------*/
@@ -78,9 +85,8 @@ h1{
 
 
 #logo a{
-	font-family: 'Playgames', 'Montserrat', 'sans-serif';
+	font-family: 'Beefd', 'Montserrat', 'sans-serif';
 	font-size: 1.5rem;
-	letter-spacing: 13px;
 }
 
 img{
